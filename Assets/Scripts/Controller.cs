@@ -18,6 +18,7 @@ public class Controller : MonoBehaviour {
     public float cooldownTime = 0.5f;
     private float nextFire;
 
+    public AudioSource gunSound;
 
 
     // Use this for initialization
@@ -49,11 +50,10 @@ public class Controller : MonoBehaviour {
         movement.y = movement.y - (gravity*Time.deltaTime);
         controller.Move(movement*Time.deltaTime);
 
-        if(Input.GetButton("Fire1") && Time.time > nextFire){
-
+        if(Input.GetButton("Fire1") && Time.time > nextFire) {
             nextFire = Time.time + cooldownTime;
             Instantiate(bullet, spawn.position, spawn.rotation);
-            // Debug.Log(spawn.position);
+            gunSound.Play();
         }
 
 

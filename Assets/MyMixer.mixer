@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: MyMixer
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 32bf719b32c2d8d4c9237f119af39daf
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 32bf719b32c2d8d4c9237f119af39daf
+  m_Children: []
+  m_Volume: b5ce57b168aaa224f9a0022e1247abdd
+  m_Pitch: 2b6a8bb87b428354c84202689504285d
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: ba2e72d3cdc60364b9fb4d97848d9e86
+  m_EffectName: Attenuation
+  m_MixLevel: 6bfd3b45e4dfffb4c875dc067ec5c2c7
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 9b9dfd109ebef3340b0833c5769900a7
+  m_FloatValues:
+    b5ce57b168aaa224f9a0022e1247abdd: 0
+    07728db13f309c84086a74d4f5f1cf04: 7.8
+    4f5bc233d6cba8c46ac5122325052bf2: 0.768
+    bc4757830a4b6324c92849b9d431e987: 0.264
+    1cfa3a9627c3d8341bc844ab1df02ef5: 1.561
+    2b6a8bb87b428354c84202689504285d: 1
+    e769517b01ec41a4f9a5e9318ff68236: 584
+  m_TransitionOverrides: {}
